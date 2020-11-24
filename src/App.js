@@ -7,6 +7,8 @@ const App = () =>
     const btnHandle = () =>
     {
         toast("This a message..")
+        toast.success("done",
+        {position:"top-center"})
     }
     return(
         <>
