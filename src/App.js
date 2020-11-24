@@ -2,6 +2,7 @@ import React from "react"
 
 import {Button} from "reactstrap"
 import {ToastContainer, toast} from "react-toastify"
+import Home from "./components/Home"
 const App = () =>
 {
     const btnHandle = () =>
@@ -12,9 +13,10 @@ const App = () =>
     }
     return(
         <>
-        <ToastContainer/>
+        <Home></Home>
+        {/* <ToastContainer/>
             <h1>Application</h1>
-            <Button color="warning" onClick={btnHandle}>React Button</Button>
+            <Button color="warning" onClick={btnHandle}>React Button</Button> */}
         </>
     )
 }
