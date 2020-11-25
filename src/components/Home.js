@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import {Jumbotron, Container, Button} from "reactstrap"
+import {Jumbotron, Container, Button, Row, Col} from "reactstrap"
 
 const Home = () =>
 {
@@ -9,6 +9,8 @@ const Home = () =>
     }, [])
     return(
         <>
+        <Row>
+            <Col md={12}>
             <Jumbotron className="text-center">
                 <h1 className="display-3">Sanjay G</h1>
                 <p>
@@ -18,6 +20,9 @@ const Home = () =>
                     <Button color="primary" outline>Get Started</Button>
                 </Container>
             </Jumbotron>
+            </Col>
+        </Row>
+          
         </>
     )
 }
