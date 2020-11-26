@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "react-router-dom";
 
 import {
@@ -18,14 +18,20 @@ import {
 
 const Navbars = () =>
 {
+
+    const [isOpen, setIsOpen] = useState(false);
+  
+    const toggle = () => setIsOpen(!isOpen);
+  
+
     return(
         <>
            <Navbar color="primary" light expand="md">
         {/* <NavbarBrand href="/" style={{color:"white"}}>Home</NavbarBrand> */}
         <Link  tag="a" to="/" action><NavbarBrand href="/" style={{color:"white"}}> Home</NavbarBrand></Link>
 
-        <NavbarToggler  />
-        <Collapse navbar>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
             <Link  tag="a" to="/appnav" action><NavLink href="" style={{color:"white"}}>App</NavLink></Link>
