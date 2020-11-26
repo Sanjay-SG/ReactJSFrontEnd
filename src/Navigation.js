@@ -10,8 +10,8 @@ import Header from "./components/Header"
 import Menus from "./components/Menus"
 
 import {BrowserRouter as Router, Route} from "react-router-dom"
-import Navigation from "./Navigation"
-const App = () =>
+import App from "./App"
+const Navigation = () =>
 {
     const btnHandle = () =>
     {
@@ -22,22 +22,19 @@ const App = () =>
     return(
         <>
         <Router>
-        {/* <Navigation></Navigation> */}
         <ToastContainer/>
         <Container>
-        <Header></Header>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/appnav" component={Navigation} />
-        
+        {/* <Header></Header> */}
             <Row>
                 <Col md={4}>
-                        {/* <Menus></Menus> */}
+                        <Menus></Menus>
                 </Col>
                 <Col md={8}>
                         {/* <Home></Home> */}
-                        {/* <Route exact path="/" component={Home} /> */}
-                        {/* <Route exact path="/add-course" component={AddCourse}/>
-                        <Route exact path="/view-courses" component={Allcourses}/> */}
+                        {/* <Route exact path="/" component={Home} />
+                        <Route exact path="/app" component={App}/> */}
+                        <Route exact path="/appnav/add-course" component={AddCourse}/>
+                        <Route exact path="/appnav/view-courses" component={Allcourses}/>
                         
                 </Col>
 
@@ -60,4 +57,4 @@ const App = () =>
     )
 }
 
-export default App;
+export default Navigation;
