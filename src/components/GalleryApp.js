@@ -3,6 +3,7 @@ import { Button, Card, CardBody, CardImg, CardSubtitle, CardText, CardTitle } fr
 import img1 from "D://Projects/React/website1/website1/src/img/img2.jpg"
 import GallerImgs from "./GalleryImgs";
 import GalleryImgs from "./GalleryImgs";
+import "./GalleryApp.css"
 
 const GalleryApp = () =>
 {
@@ -16,7 +17,7 @@ const GalleryApp = () =>
         console.log(val);
         return(
             <Card>
-                <CardImg top width="100%" src={val.img} alt="Card image cap" />
+                <CardImg className="photo" top width="100%" src={val.img} alt="Card image cap" />
                 <CardBody>
                 <CardTitle tag="h5">{val.title}</CardTitle>
                 <CardSubtitle tag="h6" className="mb-2 text-muted">{val.sub_title}</CardSubtitle>
