@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { Link } from "react-router-dom";
 
 import {
+    Container,
     Collapse,
     Navbar,
     NavbarToggler,
@@ -13,7 +14,9 @@ import {
     DropdownToggle,
     DropdownMenu,
     DropdownItem,
-    NavbarText
+    NavbarText,
+    Row,
+    Col
   } from 'reactstrap';
 
 const Navbars = () =>
@@ -26,40 +29,50 @@ const Navbars = () =>
 
     return(
         <>
+        <Container className="themed-container" fluid={true}>
+        <Row>
+          <Col>
+            
+           {/* <Navbar color="primary" light expand="md"> */}
            <Navbar color="primary" light expand="md">
-        {/* <NavbarBrand href="/" style={{color:"white"}}>Home</NavbarBrand> */}
-        <Link  tag="a" to="/" action><NavbarBrand href="/" style={{color:"white"}}> Home</NavbarBrand></Link>
+           {/* <Navbar color="#FFC300" style={{backgroundColor:"#FFC300"}} light expand="md"> */}
+        <NavbarBrand href="/" style={{color:"white"}}>Home</NavbarBrand>
+        {/* <Link  tag="a" to="/" action><NavbarBrand href="/" style={{color:"white"}}> HOME </NavbarBrand></Link> */}
 
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-            <Link  tag="a" to="/appnav" action><NavLink href="" style={{color:"white"}}>App</NavLink></Link>
+            <Link style={{ fontSize:"2"}} tag="a" to="/appnav" action><NavLink href="" style={{color:"white"}}>APP</NavLink></Link>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap" style={{color:"white"}}>GitHub</NavLink>
+              <NavLink href="#" style={{color:"white"}}>PROJECT</NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret style={{color:"white"}}>
-                Options
+                OPTIONS
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
-                  Option 1
+                  OPTION 1
                 </DropdownItem>
                 <DropdownItem>
-                  Option 2
+                  OPTION 2
                 </DropdownItem>
-                <DropdownItem divider />
+                {/* <DropdownItem divider />
                 <DropdownItem>
                   Reset
-                </DropdownItem>
+                </DropdownItem> */}
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
-          <NavbarText style={{color:"white"}}>Simple Text</NavbarText>
+          <NavbarText style={{color:"white"}}>ABOUT</NavbarText>
         </Collapse>
       </Navbar>
+      
+      </Col>
+      </Row>
+      </Container>
         </>
     )
 }

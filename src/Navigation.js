@@ -33,6 +33,8 @@ const Navigation = () =>
                         {/* <Home></Home> */}
                         {/* <Route exact path="/" component={Home} />
                         <Route exact path="/app" component={App}/> */}
+                        <h3 className="text-center" color="primary"> Course Dashboard </h3>
+                        <hr/>
                         <Route exact path="/appnav/add-course" component={AddCourse}/>
                         <Route exact path="/appnav/view-courses" component={Allcourses}/>
                         

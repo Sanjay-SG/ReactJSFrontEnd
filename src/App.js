@@ -11,6 +11,7 @@ import Menus from "./components/Menus"
 
 import {BrowserRouter as Router, Route} from "react-router-dom"
 import Navigation from "./Navigation"
+import FirstHeader from "./components/FirstHeader"
 const App = () =>
 {
     const btnHandle = () =>
@@ -21,6 +22,7 @@ const App = () =>
     }
     return(
         <>
+        <FirstHeader></FirstHeader>
         <Router>
         {/* <Navigation></Navigation> */}
         <ToastContainer/>

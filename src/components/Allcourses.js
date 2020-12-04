@@ -25,6 +25,7 @@ const Allcourses = () =>
     const getAllCoursesFromServer = () =>
     {
         axios.get(`${base_url}/courses`).then(
+            // axios.get(`https://cors-anywhere.herokuapp.com/{localhost}/courses`).then(
             (response)=>
             {
                 // console.log(response)
@@ -65,6 +66,10 @@ const Allcourses = () =>
 //dynamic data
     const [courses, setCourses] = useState([]);
 
+    const updateCourses = (id) =>
+    {
+        setCourses(courses.filter((c)=> c.id != id));
+    }
 
     return(
         <>
@@ -83,7 +88,7 @@ const Allcourses = () =>
             <p>List of courses</p>
             {
                 courses.length > 0 ? courses.map((item)=>(
-                    <Course key={item.id} course = {item} />
+                    <Course key={item.id} course = {item} update={updateCourses}/>
                 )) : "No courses available"
             }
         </>
