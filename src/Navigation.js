@@ -11,6 +11,7 @@ import Menus from "./components/Menus"
 
 import {BrowserRouter as Router, Route} from "react-router-dom"
 import App from "./App"
+import CounterApp from "./components/CounterApp"
 const Navigation = () =>
 {
 
@@ -40,11 +41,11 @@ const Navigation = () =>
                         {/* <Home></Home> */}
                         {/* <Route exact path="/" component={Home} />
                         <Route exact path="/app" component={App}/> */}
-                        <h3 className="text-center" color="primary"> Course Dashboard </h3>
+                        <h3 className="text-center" color="primary"> Dashboard </h3>
                         <hr/>
-                        <Route exact path="/appnav/add-course" component={AddCourse}/>
-                        <Route exact path="/appnav/view-courses" component={Allcourses}/>
-                        
+                        <Route exact path="/appnav/add_course" component={AddCourse}/>
+                        <Route exact path="/appnav/view_courses" component={Allcourses}/>
+                        <Route exact path="/appnav/counter_app" component={CounterApp}/>
                 </Col>
 
             </Row>
