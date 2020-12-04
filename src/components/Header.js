@@ -8,18 +8,23 @@ const Header = () =>
         <>
         {/* <Row>
         <Col> */}
-            <Card className="my-2 bg-warning">
+            {/* <Card className="my-2 bg-warning">  */}
+          
+          
+          
+            <Card className="my-2 bg-light"> 
                 <CardBody>
-                   <h1 className="text-center my-3"> Welcome </h1>
-                   {/* <Navbars></Navbars> */}
+                   <h5 className="text-left" style={{color:"DodgerBlue"}}><b> SSGOnline </b></h5>          
                 </CardBody>
                 <CardBody>
                 <Navbars></Navbars>
                 </CardBody>
             </Card>
-            {/* <Navbars></Navbars> */}
+
+
             {/* </Col>
             </Row> */}
+            {/* <Navbars></Navbars> */}
         </>
     )
 }
