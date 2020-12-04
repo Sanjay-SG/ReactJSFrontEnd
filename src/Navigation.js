@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 
 import {Button, Col, Container, Row} from "reactstrap"
 import {ToastContainer, toast} from "react-toastify"
@@ -13,6 +13,13 @@ import {BrowserRouter as Router, Route} from "react-router-dom"
 import App from "./App"
 const Navigation = () =>
 {
+
+    useEffect(()=>
+    {
+        document.title = "App"
+    }, []);
+
+
     const btnHandle = () =>
     {
         toast("This a message..")
