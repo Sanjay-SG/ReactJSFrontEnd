@@ -5,7 +5,7 @@ const CounterApp = () =>
 {
     useEffect(()=>
     {
-        document.title = "Counter App";
+        document.title = "Counter";
     }, []);
 
     const[counter, incrCount] = useState(0);

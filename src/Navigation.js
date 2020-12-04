@@ -12,6 +12,7 @@ import Menus from "./components/Menus"
 import {BrowserRouter as Router, Route} from "react-router-dom"
 import App from "./App"
 import CounterApp from "./components/CounterApp"
+import GalleryApp from "./components/GalleryApp"
 const Navigation = () =>
 {
 
@@ -46,6 +47,7 @@ const Navigation = () =>
                         <Route exact path="/appnav/add_course" component={AddCourse}/>
                         <Route exact path="/appnav/view_courses" component={Allcourses}/>
                         <Route exact path="/appnav/counter_app" component={CounterApp}/>
+                        <Route exact path="/appnav/gallery_app" component={GalleryApp}/>
                 </Col>
 
             </Row>
