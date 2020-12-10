@@ -84,7 +84,7 @@ const Allcourses = () =>
                 ])
             }}>Test</Button> */}
 
-            <h1>All Courses</h1>
+            <h4>All Courses</h4>
             <p>List of courses</p>
             {
                 courses.length > 0 ? courses.map((item)=>(

@@ -36,7 +36,7 @@ const Navbars = () =>
            {/* <Navbar color="primary" light expand="md"> */}
            <Navbar color="primary" light expand="md">
            {/* <Navbar color="#FFC300" style={{backgroundColor:"#FFC300"}} light expand="md"> */}
-        <NavbarBrand href="/" style={{color:"white"}}>Home</NavbarBrand>
+           <Link tag="a" to="/" action><NavbarBrand href="/" style={{color:"white"}}>HOME</NavbarBrand></Link>
         {/* <Link  tag="a" to="/" action><NavbarBrand href="/" style={{color:"white"}}> HOME </NavbarBrand></Link> */}
 
         <NavbarToggler onClick={toggle} />
