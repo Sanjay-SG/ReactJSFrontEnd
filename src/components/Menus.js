@@ -21,6 +21,8 @@ const Menus = () =>
             <Link className="list-group-item list-group-item-action" tag="a" to="/appnav/view_courses" action>View Courses</Link>
             <Link className="list-group-item list-group-item-action" tag="a" to="/appnav/counter_app" action>Counter</Link>
             <Link className="list-group-item list-group-item-action" tag="a" to="/appnav/gallery_app" action>Gallery</Link>
+            {/* <Link className="list-group-item list-group-item-action" tag="a" to="/appnav/items_app" action>Items</Link> */}
+            <Link className="list-group-item list-group-item-action" tag="a" to="/appnav/tasks_app" action>Tasks</Link>
 
             {/* <Link className="list-group-item list-group-item-action" tag="a" to="#!" action>About</Link>
             <Link className="list-group-item list-group-item-action" tag="a" to="#!" action>Contact</Link> */}

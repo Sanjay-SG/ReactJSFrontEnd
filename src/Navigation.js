@@ -13,6 +13,8 @@ import {BrowserRouter as Router, Route} from "react-router-dom"
 import App from "./App"
 import CounterApp from "./components/CounterApp"
 import GalleryApp from "./components/GalleryApp"
+// import AllItems from "./components/AllItems"
+import Todo from "./components/Todo"
 const Navigation = () =>
 {
 
@@ -48,6 +50,8 @@ const Navigation = () =>
                         <Route exact path="/appnav/view_courses" component={Allcourses}/>
                         <Route exact path="/appnav/counter_app" component={CounterApp}/>
                         <Route exact path="/appnav/gallery_app" component={GalleryApp}/>
+                        {/* <Route exact path="/appnav/items_app" component={AllItems}/> */}
+                        <Route exact path="/appnav/tasks_app" component={Todo}/>
                 </Col>
 
             </Row>
