@@ -14,7 +14,7 @@ const Header = () =>
           
             <Card className="my-2 bg-light"> 
                 <CardBody>
-                   <h5 className="text-left" style={{color:"DodgerBlue"}}><b> SSGOnline </b></h5>          
+                   {/* <h5 className="text-left" style={{paddingLeft:"0.6em", paddingRight:"0.6em", color:"DodgerBlue", borderStyle:"groove", width:"fit-content", textAlign:"center"}}><b> SSG </b>Online </h5>           */}
                 </CardBody>
                 <CardBody>
                 <Navbars></Navbars>

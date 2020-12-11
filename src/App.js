@@ -1,34 +1,36 @@
 import React from "react"
 
-import {Button, Col, Container, Row} from "reactstrap"
+import {Col, Container, Row} from "reactstrap"
 import {ToastContainer, toast} from "react-toastify"
 import Home from "./components/Home"
-import Course from "./components/Course"
-import Allcourses from "./components/Allcourses"
-import AddCourse from "./components/AddCourse"
-import Header from "./components/Header"
-import Menus from "./components/Menus"
 
 import {BrowserRouter as Router, Route} from "react-router-dom"
 import Navigation from "./Navigation"
-import FirstHeader from "./components/FirstHeader"
+import TopNav from "./components/TopNav"
+import BottomNav from "./components/BottomNav"
+import HomeImg from "./components/HomeImg"
+// import "./components/TopNav.css"
+
 const App = () =>
 {
-    const btnHandle = () =>
-    {
-        toast("This a message..")
-        toast.success("done",
-        {position:"top-center"})
-    }
     return(
         <>
-        <FirstHeader></FirstHeader>
+        
+        {/* <FirstHeader></FirstHeader> */}
         <Router>
+       
+           <div className="container">
+           <TopNav/>
+           </div>
+           <Route exact path="/" component={HomeImg} />
+        {/* <TopNav/> */}
+        {/* <HomeImg/> */}
         {/* <Navigation></Navigation> */}
         <ToastContainer/>
         <Container>
-        <Header></Header>
-        <Route exact path="/" component={Home} />
+        {/* <Header></Header> */}
+        
+        {/* <Route exact path="/" component={Home} /> */}
         <Route exact path="/appnav" component={Navigation} />
         
             <Row>
@@ -45,7 +47,9 @@ const App = () =>
 
             </Row>
 
+          
         </Container>
+        <BottomNav/>
         </Router>
         {/* <Home></Home>
         <Allcourses></Allcourses>

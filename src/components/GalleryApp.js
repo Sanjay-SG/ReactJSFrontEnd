@@ -22,7 +22,7 @@ const GalleryApp = () =>
                 <CardTitle tag="h5">{val.title}</CardTitle>
                 <CardSubtitle tag="h6" className="mb-2 text-muted">{val.sub_title}</CardSubtitle>
                 <CardText>{val.text}</CardText>
-                <Button color="primary">Button</Button>
+                <Button color="primary">More</Button>
                 </CardBody>
             </Card>  
         );

@@ -34,7 +34,7 @@ const Navigation = () =>
         <>
         <Router>
         <ToastContainer/>
-        <Container>
+        <Container className="my-5">
         {/* <Header></Header> */}
             <Row>
                 <Col md={4}>
