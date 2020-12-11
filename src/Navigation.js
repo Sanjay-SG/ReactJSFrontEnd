@@ -20,7 +20,7 @@ const Navigation = () =>
 
     useEffect(()=>
     {
-        document.title = "App"
+        document.title = "Projects"
     }, []);
 
 
@@ -46,12 +46,12 @@ const Navigation = () =>
                         <Route exact path="/app" component={App}/> */}
                         <h3 className="text-center" color="primary"> Dashboard </h3>
                         <hr/>
-                        <Route exact path="/appnav/add_course" component={AddCourse}/>
-                        <Route exact path="/appnav/view_courses" component={Allcourses}/>
-                        <Route exact path="/appnav/counter_app" component={CounterApp}/>
-                        <Route exact path="/appnav/gallery_app" component={GalleryApp}/>
-                        {/* <Route exact path="/appnav/items_app" component={AllItems}/> */}
-                        <Route exact path="/appnav/tasks_app" component={Todo}/>
+                        <Route exact path="/projects/add_course" component={AddCourse}/>
+                        <Route exact path="/projects/view_courses" component={Allcourses}/>
+                        <Route exact path="/projects/counter_app" component={CounterApp}/>
+                        <Route exact path="/projects/gallery_app" component={GalleryApp}/>
+                        {/* <Route exact path="/projects/items_app" component={AllItems}/> */}
+                        <Route exact path="/projects/tasks_app" component={Todo}/>
                 </Col>
 
             </Row>

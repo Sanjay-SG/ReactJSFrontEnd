@@ -31,7 +31,7 @@ const App = () =>
         {/* <Header></Header> */}
         
         {/* <Route exact path="/" component={Home} /> */}
-        <Route exact path="/appnav" component={Navigation} />
+        <Route exact path="/projects" component={Navigation} />
         
             <Row>
                 <Col md={4}>

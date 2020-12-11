@@ -23,7 +23,7 @@ const TopNav = () =>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">
-      <Link to = "/appnav"><Nav.Link href="#features">Projects</Nav.Link></Link>
+      <Link to = "/projects"><Nav.Link href="#features">Projects</Nav.Link></Link>
       {/* <Nav.Link href="#pricing">Pricing</Nav.Link> */}
       {/* <NavDropdown title="Projects" id="collasible-nav-dropdown">
         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
