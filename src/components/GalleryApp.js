@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import { Button, Card, CardBody, CardImg, CardSubtitle, CardText, CardTitle } from "reactstrap";
-import img1 from "D://Projects/React/website1/website1/src/img/img2.jpg"
-import GallerImgs from "./GalleryImgs";
+// import img1 from "D://Projects/React/website1/website1/src/img/img2.jpg"
+// import GallerImgs from "./GalleryImgs";
 import GalleryImgs from "./GalleryImgs";
 import "./GalleryApp.css"
 
