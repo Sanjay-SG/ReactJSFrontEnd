@@ -1,0 +1,39 @@
+/* .responsive-image {
+    position: relative;
+    max-width: 100%;
+  }
+  
+  .responsive-image__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+   */
+
+
+   .image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+h2 { 
+   position: absolute; 
+   /* top: 200px;  */
+   top:100px;
+   left: 0; 
+   width: 100%; 
+   text-align: center;  
+}
+
+/* body{
+  background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+  background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,0,0,1));
+  background-image: linear-gradient(rgb(244, 245, 244), blue);
+
+
+} */
