@@ -1,7 +1,6 @@
 
-import img1 from "D://Projects/React/website1/website1/src/img/img1.jpg"
-import img2 from "D://Projects/React/website1/website1/src/img/img2.jpg"
-
+import img1 from "../img/img1.jpg"
+import img2 from "../img/img2.jpg"
 
 const GalleryImgs=
 [
